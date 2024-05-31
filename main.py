@@ -24,7 +24,7 @@ def book_report(book: str):
     print(f"{total_words} words found in the document", "\n")
 
     for char in char_count:
-        print(f"The {char} character was found {char_count[char]} times.")
+        print(f"The {repr(char)} character was found {repr(char_count[char])} times.")
 
     print("--- End report ---")
 
